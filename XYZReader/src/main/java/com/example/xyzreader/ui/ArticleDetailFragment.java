@@ -160,17 +160,19 @@ public class ArticleDetailFragment extends Fragment implements
                             if (bitmap != null) {
                                 Palette p = Palette.generate(bitmap, 12);
 
-                                int mMutedColor;
+                                int mDarkMutedColor, mMutedColor;
                                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                                    mMutedColor = p.getDarkMutedColor(getResources().getColor(R.color.muted_color,null));
+                                    mDarkMutedColor = p.getDarkMutedColor(getResources().getColor(R.color.muted_color,null));
+                                    mMutedColor = p.getMutedColor(getResources().getColor(R.color.theme_primary, null));
                                 }else {
-                                    mMutedColor = p.getDarkMutedColor(getResources().getColor(R.color.muted_color));
+                                    mDarkMutedColor = p.getDarkMutedColor(getResources().getColor(R.color.muted_color));
+                                    mMutedColor = p.getMutedColor(getResources().getColor(R.color.muted_color));
                                 }
 
-                                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                                    collapsingToolbarLayout.setContentScrimColor(p.getMutedColor(getResources().getColor(R.color.theme_primary, null)));
-                                    collapsingToolbarLayout.setStatusBarScrimColor(p.getDarkMutedColor(getResources().getColor(R.color.theme_primary_dark, null)));
-                                }
+                                collapsingToolbarLayout.setContentScrimColor(mMutedColor);
+                                collapsingToolbarLayout.setStatusBarScrimColor(mDarkMutedColor);
+                                mRootView.findViewById(R.id.meta_bar).setBackgroundColor(mDarkMutedColor);
+
                                 mPhotoView.setImageBitmap(imageContainer.getBitmap());
                                 mRootView.findViewById(R.id.meta_bar).setBackgroundColor(mMutedColor);
                             }

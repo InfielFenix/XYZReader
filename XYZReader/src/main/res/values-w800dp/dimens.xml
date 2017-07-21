@@ -1,8 +1,8 @@
 <resources>
     <!-- list -->
-    <dimen name="list_side_margin">64dp</dimen>
+    <dimen name="list_side_margin">32dp</dimen>
 
     <!-- detail -->
     <dimen name="detail_card_max_width">704dp</dimen>
-    <dimen name="detail_scrollview_top_margin">-100dp</dimen>
+    <dimen name="detail_scrollview_top_margin">-160dp</dimen>
 </resources>

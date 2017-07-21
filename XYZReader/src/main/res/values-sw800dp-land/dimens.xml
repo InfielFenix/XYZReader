@@ -1,0 +1,5 @@
+<resources>
+    <!-- detail -->
+    <dimen name="detail_card_max_width">1100dp</dimen>
+    <dimen name="detail_scrollview_top_margin">-170dp</dimen>
+</resources>

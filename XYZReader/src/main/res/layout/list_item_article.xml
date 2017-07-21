@@ -28,17 +28,15 @@
             android:paddingRight="@dimen/text_padding"
             android:paddingBottom="4dp"
             android:ellipsize="end"
-            android:maxLines="4" />
+            android:maxLines="1" />
 
         <TextView
             android:id="@+id/article_subtitle"
-            style="@style/TextAppearance.AppCompat.Body1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="@dimen/text_padding"
             android:paddingRight="@dimen/text_padding"
             android:paddingBottom="@dimen/text_padding"
-            android:textColor="#6000"
             android:maxLines="2"
             android:ellipsize="end" />
     </LinearLayout>
