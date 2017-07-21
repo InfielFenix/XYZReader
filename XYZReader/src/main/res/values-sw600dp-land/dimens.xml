@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="detail_photo_height">600dp</dimen>
+    <dimen name="detail_scrollview_top_margin">-100dp</dimen>
+</resources>

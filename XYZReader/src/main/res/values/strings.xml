@@ -8,5 +8,8 @@
     <string name="action_share">Share</string>
 
     <string name="up">Up</string>
+    <string name="transition_article">Article_Transition</string>
+    <string name="extra_item_id">ItemId</string>
+    <string name="not_found">N/A</string>
 
 </resources>
